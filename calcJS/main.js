@@ -13,7 +13,7 @@ buttons.forEach(button => {
                 currentInput = '';
                 previousInput = '';
                 operator = null;
-                display.textContent = '0';
+                display.textContent = '';
                 break;
             case '=':
                 if (previousInput !== '' && currentInput !== '') {
