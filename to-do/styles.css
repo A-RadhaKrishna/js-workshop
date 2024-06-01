@@ -1,0 +1,32 @@
+*{
+    margin :0;
+    padding :0;
+    font-family : 'Poppins', sans-serief;
+    box-sizing : border-box;
+}
+body{
+    text-align:center;
+    background: linear-gradient(135deg,#153677,#4e085f);
+}
+#main{
+    width: 100%;
+    max-width: 440hv;
+    background:#f2eeee;
+    margin: 50px auto 20px;
+    padding:20px 20px 20px;
+}
+
+
+#delete{
+    background-color: rgb(161, 52, 52);
+    padding:10px;
+}
+
+#Editbutton{
+    background-color: yellowgreen;
+    padding:10px;
+}
+
+/* #taskinput{
+    background-color: ;
+} */

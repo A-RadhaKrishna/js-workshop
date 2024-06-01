@@ -7,7 +7,7 @@ function addTask() {
     const taskInput = document.getElementById('taskInput');
     // Get the text value of the task input
     const taskText = taskInput.value;
-
+    taskInput.id="taskinput";
     // Check if the task text is empty
     if (taskText === '') {
         // Alert the user to enter a task if the task text is empty
@@ -33,11 +33,12 @@ function addTask() {
     const taskSpan = document.createElement('span');
     // Set the text content of the span to the task text
     taskSpan.textContent = taskText;
-
     // Create a new edit button element
     const editButton = document.createElement('button');
     // Set the text content of the edit button to "Edit"
+    editButton.id="Editbutton";
     editButton.textContent = 'Edit';
+    
     // Add an event listener to the edit button to edit the task
     editButton.onclick = function() {
         editTask(taskSpan);
@@ -45,6 +46,7 @@ function addTask() {
 
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
+    deleteButton.id="delete";
     deleteButton.onclick = function(){
         taskList.removeChild(listItem);
     }
