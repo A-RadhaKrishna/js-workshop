@@ -16,7 +16,7 @@ buttons.forEach(button => {
                 display.textContent = '';
                 break;
             case '=':
-                if (previousInput !== '' && currentInput !== '') {
+                if (previousInput !== '' && currentInput !== '') {z
                     currentInput = eval(previousInput + operator + currentInput).toString();
                     operator = null;
                     previousInput = '';
