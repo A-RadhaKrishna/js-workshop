@@ -1,32 +1,124 @@
-*{
-    margin :0;
-    padding :0;
-    font-family : 'Poppins', sans-serief;
-    box-sizing : border-box;
+/* General styles */
+body {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);  /* Light gradient background */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
 }
-body{
-    text-align:center;
-    background: linear-gradient(135deg,#153677,#4e085f);
-}
-#main{
+
+/* Container for the to-do list */
+.container {
+    background-color: #ffffffd9;  /* Light translucent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 440hv;
-    background:#f2eeee;
-    margin: 50px auto 20px;
-    padding:20px 20px 20px;
+    max-width: 400px;
+    text-align: center;
+    overflow: auto;
 }
 
-
-#delete{
-    background-color: rgb(161, 52, 52);
-    padding:10px;
+/* Header */
+#main {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
 }
 
-#Editbutton{
-    background-color: yellowgreen;
-    padding:10px;
+/* Input container */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
 }
 
-/* #taskinput{
-    background-color: ;
-} */
+#taskInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#test {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4e085f;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;  /* Ensure the button is full-width */
+}
+
+#test:hover {
+    background-color: #153677;
+}
+
+/* Task list */
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#taskList li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+#taskList li:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+#taskList li:hover {
+    background-color: #e9e9e9;
+}
+
+/* Buttons inside the task list */
+#taskList .btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Edit button */
+#Editbutton {
+    background-color: #ffeb3b;
+    color: #333;
+}
+
+#Editbutton:hover {
+    background-color: #fdd835;
+}
+
+/* Delete button */
+#delete {
+    background-color: #f44336;
+    color: #fff;
+}
+
+#delete:hover {
+    background-color: #d32f2f;
+}
+
+/* Checkbox */
+#taskList input[type="checkbox"] {
+    margin-right: 10px;
+}
